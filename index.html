@@ -26,7 +26,7 @@
 
           <div class="computerScore">
             <h2>Computer</h2>
-            <p class="p-count count"> 0 </p>
+            <p class="c-count count"> 0 </p>
           </div>
         </div>
 
@@ -36,28 +36,22 @@
         <!-- Player selection buttons -->
         <div class="options">
           <button onclick = "throwRock()" class="rock">Rock</button>
-          <button class="paper">Paper</button>
-          <button class="scissors">Scissors</button>
-        </div>
-
-        <div class="row mt-5">
-          <div class="col-md-4">
-            <img src="https://i.imgur.com/UFMIlhD.jpg" class="img-fluid img-thumbnail" alt="rock-img">
-          </div>
-          <div class="col-md-4">
-            <img src="https://i.imgur.com/UFMIlhD.jpg" class="img-fluid img-thumbnail" alt="rock-img">
-          </div>
-          <div class="col-md-4">
-            <img src="https://i.imgur.com/UFMIlhD.jpg" class="img-fluid img-thumbnail" alt="rock-img">
-          </div>
+          <button onclick = "throwPaper()" class="paper">Paper</button>
+          <button onclick = "throwScissors()" class="scissors">Scissors</button>
         </div>
 
         <!-- Show results of round -->
-        <div class="result my-5">Who will win?</div>
+        <div class="result mt-5">Who will win?</div>
 
         <!-- Button to reset Score -->
-        <button class="reset">Reset</button>
+        <button onclick = "resetScore()" class="reset">Reset</button>
 
+        <div class="row mt-5">
+          <div class="col">
+            <img src="https://i.imgur.com/J1VxUJa.png" class="img-fluid img-thumbnail" alt="rock-img">
+          </div>
+        </div>
+        
       </section>
     </div>
 
